@@ -6,6 +6,7 @@ import Signup from './component/Signup';
 import {Routes, Route} from 'react-router-dom'
 import Profilesignin from './component/Profilesignin';
 import User from './components/User';
+import Company from './component/Company';
 
 function App() {
   return (
