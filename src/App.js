@@ -5,6 +5,7 @@ import Option from './component/Option';
 import Signup from './component/Signup';
 import {Routes, Route} from 'react-router-dom'
 import Profilesignin from './component/Profilesignin';
+import User from './components/User';
 import Company from './component/Company';
 
 function App() {
@@ -15,7 +16,6 @@ function App() {
         <Route path='/option' element={<Option/>} />
         <Route path='/' element={<Login/>} />
         <Route path='/profiledetails' element={<Profilesignin/>} />
-        <Route path='/company' element={<Company/>} />
       </Routes>
     </div>
   );
