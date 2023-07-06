@@ -5,6 +5,7 @@ import Option from './component/Option';
 import Signup from './component/Signup';
 import {Routes, Route} from 'react-router-dom'
 import Profilesignin from './component/Profilesignin';
+import User from './components/User';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path='/option' element={<Option/>} />
         <Route path='/' element={<Login/>} />
         <Route path='/profiledetails' element={<Profilesignin/>} />
+        <Route path='/user' element={<User/>} />
+
         {/* hello */}
       </Routes>
     </div>
