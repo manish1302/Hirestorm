@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+.Login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signForm {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loginBox {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.username {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.password {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.loginBtn {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 80px;
+}
+
+.signBtn {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 80px;
+}
+
+.submit {
+  margin: 25px 0;
+  padding: 10px 20px;
+  border: none;
+  width: 150px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: rgba(0,0,0,0.5);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ActiveBtn {
+  background-color: black;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginblock {
+  width: 95%;
+  height: 95%;
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 20px;
+  display: flex;
+
+}
+
+.loginleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  width: 50%;
+  background-color: red;
+  padding: 200px;
+  color: white;
+}
+
+.loginright {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 100;
+  font-size: small;
+}
+
+.optionblock {
+  width: 90%;
+  height: 90%;
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupBlock {
+  width: 95%;
+  height: 95%;
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 20px;
+  display: flex;
+}
+
+
+.leftBorder {
+  border-top-left-radius: 20px;
+}
+
+.loginLink {
+  color: rgba(255,255,255,0.7);
+}
+
+.alreadyUser {
+  color: rgba(255,255, 255,0.7);
+}
+
+.logoImage {
+  width: 300px;
+  height: auto;
+}
+
+.logoName {
+  font-family: 'Lora', serif;
+}
+
+.optionBtn {
+  cursor: pointer;
+}
+
+.optionBtn:hover {
+  color: black;
+  border: none;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.jobseekerImg {
+  width: 10%;
+  height: auto;
+}
+
+.profileHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
 }
